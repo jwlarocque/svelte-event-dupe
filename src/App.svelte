@@ -5,7 +5,6 @@
 </script>
 
 <main>
-
 	<ItemComponent bind:data={data}/>
 </main>
 

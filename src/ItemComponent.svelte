@@ -14,7 +14,7 @@
     <div class="list">
         <button on:click={swap}>Swap Items</button>
         {#each data as datum (datum)}
-            <div on:click|stopPropagation={function(ev) {console.log("mousedown!");}}>
+            <div on:click|stopPropagation|preventDefault|self={function(ev) {console.log("mousedown!");}}>
                 <p>{datum}</p>
             </div>
         {/each}
